@@ -1,78 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="icon" type="image/png" href="img/tab.png">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="icon" type="image/png" href="img/tab.png" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#footer">CONTACT</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#footer">CONTACT</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="intro" class="my-intro">
-              <div class="intro-top">
-                <div class="intro-text">
-                    <h1>TERRY LIN</h1>
-                    </div>
+      <section id="intro" class="my-intro">
+        <div class="intro-top">
+          <div class="intro-text">
+            <h1>TERRY LIN</h1>
+          </div>
 
-                    <img src="img/me1.png" alt="Illustration of Terry" class="intro-img">
-                </div>
-               
-                <div class="intro-bottom">
-                    <div class="intro-bio">
-                        <p>
-                        My name is Terry Lin, a third-year SIAT student specializing in interface and interaction design.
-                        I am drawn to the moment where people meet technology and how small design decisions shape emotion,
-                        clarity, and engagement.
-                        </p>
-                    </div>
+          <img
+            src="img/me1.png"
+            alt="Illustration of Terry"
+            class="intro-img"
+          />
+        </div>
 
-                    <div class="intro-info">
-                        <p>SCHOOL OF INTERACTIVE ARTS AND TECHNOLOGY</p>
-                        <p>@Simon Fraser University</p>
-                    </div>
-                </div>
+        <div class="intro-bottom">
+          <div class="intro-bio">
+            <p>
+              My name is Terry Lin, a third-year SIAT student specializing in
+              interface and interaction design. I am drawn to the moment where
+              people meet technology and how small design decisions shape
+              emotion, clarity, and engagement.
+            </p>
+          </div>
 
-              <div class="intro-skills-row">
+          <div class="intro-info">
+            <p>SCHOOL OF INTERACTIVE ARTS AND TECHNOLOGY</p>
+            <p>@Simon Fraser University</p>
+          </div>
+        </div>
 
-                <div class="intro-skills">
-                    <h2>SKILLS</h2>
-                    <p>UX/UI</p>
-                    <p>VISUAL DESIGN</p>
-                    <p>WEB DESIGN</p>
-                    <p>PROTOTYPING</p>
-                    <p>RESEARCH</p>
-                </div>
+        <div class="intro-skills-row">
+          <div class="intro-skills">
+            <h2>SKILLS</h2>
+            <p>UX/UI</p>
+            <p>VISUAL DESIGN</p>
+            <p>WEB DESIGN</p>
+            <p>PROTOTYPING</p>
+            <p>RESEARCH</p>
+          </div>
 
-                <div class="intro-tools">
-                    <h2>TOOLS</h2>
-                    <p>FIGMA</p>
-                    <p>PHOTOSHOP</p>
-                    <p>PREMIERE</p>
-                    <p>AFTEREFFECTS</p>
-                    <p>VSCODE</p>
-                </div>
+          <div class="intro-tools">
+            <h2>TOOLS</h2>
+            <p>FIGMA</p>
+            <p>PHOTOSHOP</p>
+            <p>PREMIERE</p>
+            <p>AFTEREFFECTS</p>
+            <p>VSCODE</p>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="projects">
+        <h2 class="section-title">PROJECTS</h2>
 
+        <!-- Project 1 -->
+        <article class="project">
+          <div class="project-left">
+            <h3 class="project-title">Car Customization Garage Simulator</h3>
+            <p class="project-desc">
+              Java-based interactive experience with multiple screens, animated
+              effects, and user-driven customization.
+            </p>
+            <div class="project-meta">
+              <span>JAVA</span><span>UI</span><span>INTERACTION</span>
             </div>
-        </section>
-        <section id="projects" class="my-projects">
+          </div>
 
-        </section>
+          <div class="carousel" data-carousel>
+
+            <div class="carousel-track" data-carousel-track>
+              <img
+                src="img/project1-1.png"
+                alt="Car project screenshot 1"
+              />
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project">
+          <div class="project-left">
+            <h3 class="project-title">LA Chicken Web Experience</h3>
+            <p class="project-desc">
+              Brand-driven responsive website with clean typography, interactive
+              UI elements, and layout tuning across viewports.
+            </p>
+            <div class="project-meta">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+
+          <div class="carousel" data-carousel>
+
+            <div class="carousel-track" data-carousel-track>
+              <img
+                src="img/project2-1.png"
+                alt="LA Chicken screenshot 1"
+              />
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
     <footer id="footer" class="site-footer">
-        <hr>
-        <p><strong>Email:</strong> its.terrylin@gmail.com</p>
-        <p><strong>Phone:</strong> (604) 779-7153</p>
+      <hr />
+      <p><strong>Email:</strong> its.terrylin@gmail.com</p>
+      <p><strong>Phone:</strong> (604) 779-7153</p>
     </footer>
-</body>
+  </body>
 </html>
