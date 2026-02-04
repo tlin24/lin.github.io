@@ -158,7 +158,6 @@ body {
   border-bottom: 1px solid rgba(0,0,0,0.12);
 }
 
-/* left text */
 .project-title{
   font-family: "NeueMontreal", sans-serif;
   font-weight: bold;
@@ -206,15 +205,4 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-@media (max-width: 900px){
-  .project{
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .section-title{
-    font-size: 2rem;
-  }
 }
