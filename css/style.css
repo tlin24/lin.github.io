@@ -292,6 +292,10 @@ body {
   opacity: 0.6;
 }
 
+html { 
+  scroll-behavior: smooth; 
+}
+
 @media (max-width: 900px){
   .viz-section{
     grid-template-columns: 1fr;
