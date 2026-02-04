@@ -91,7 +91,7 @@ body {
 
 .intro-skills-row{
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   gap: 8rem;
   font-family: "Simplon Mono", sans-serif;
   margin-top: 5rem;
