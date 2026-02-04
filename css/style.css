@@ -87,6 +87,7 @@ body {
   font-family: 'Simplon Mono', sans-serif;
   flex: 0 0 auto;   /* only as wide as text */
   text-align: left;
+  
 }
 
 .intro-skills-row{
