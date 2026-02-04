@@ -1,0 +1,133 @@
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: .75rem;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px; 
+}
+
+.navbar ul li a {
+  color:#000000;
+  font-family: "NeueMontreal", sans-serif;
+  font-style: normal;
+  font-weight: bold; 
+  text-decoration: none;
+  font-size: 1rem; 
+}
+
+.navbar ul li a:hover {
+  color:#2323FF;
+  transition: .3s;
+}
+
+.my-intro{
+  min-height: 100vh;
+  padding: 6rem clamp(1.5rem, 6vw, 8rem);
+}
+
+/* the row that contains h1 + image */
+.intro-top{
+  display: flex;
+  justify-content: center;  /* left / right */
+  align-items: flex-end;           /* aligns bottoms */
+  gap: 5rem;
+  margin-top: 6rem;
+}
+
+.intro-text{
+  flex: 0 0 auto;
+  min-width: 0;                    /* prevents weird wrapping */
+}
+
+.intro-img{
+  width: min(500px, 35vw);
+  height: auto;
+  margin: 0;
+  display: block;
+  flex: 0 0 auto;
+}
+
+.my-intro h1{
+  font-family: "NeueMontreal", sans-serif;
+  font-size: clamp(3.5rem, 6vw, 7rem);
+  letter-spacing: 0.1em;
+  margin: 0;
+  transform: translateY(1rem); 
+}
+
+.intro-bottom{
+  display: flex;
+  justify-content: center; /* left / right */
+  align-items: flex-start;
+  gap: 12rem;
+
+  margin-top: 2rem; /* space under h1 + image */
+}
+.intro-bio{
+  font-family: 'Simplon Mono', sans-serif;
+  flex: 0 0 auto;          /* takes more space */
+  max-width: 60ch;
+  line-height: 1.5em;
+  margin-left: -2rem;
+}
+
+.intro-info{
+  font-family: 'Simplon Mono', sans-serif;
+  flex: 0 0 auto;   /* only as wide as text */
+  text-align: left;
+}
+
+.intro-skills-row{
+  display: flex;
+  align-items: flex-end;
+  gap: 8rem;
+  font-family: "Simplon Mono", sans-serif;
+  margin-top: 5rem;
+  margin-left: 12rem;
+}
+
+
+.intro-tools .intro-skills{
+  flex: 0 0 auto;
+  text-align: left;
+}
+
+.site-footer {
+  margin-top: 5rem;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: start;
+  padding: 3rem 4rem;
+  font-family: 'NeueMontreal', sans-serif;
+}
+
+.site-footer h1 {
+  font-family: "NeueMontreal", sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 2.5rem;
+  letter-spacing: 0.15em;
+}
+
+.site-footer p {
+  padding-top: 1rem;
+  font-family: "Simplon Mono", sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+
+
