@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualizations</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html#projects">PROJECTS</a></li>
+          <li><a href="visualizations.html">VISUALIZATIONS</a></li>
+          <li><a href="index.html#footer">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="viz-page">
+      <h1 class="viz-title">VISUALIZATIONS</h1>
+      <section class="viz-section">
+        <div class="viz-text">
+          <h2>Interactive SVG Bar Chart</h2>
+          <p>Hover a bar to highlight it and see the value.</p>
+        </div>
+
+        <div class="viz-card">
+          <svg id="barChart" class="viz-svg" viewBox="0 0 760 360" aria-label="Interactive bar chart"></svg>
+          <div id="tooltip" class="viz-tooltip" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="viz-section">
+        <div class="viz-text">
+          <h2>SVG Art</h2>
+          <p>Expanding Circle SVG Art.</p>
+        </div>
+
+        <div class="viz-card">
+          <svg id="artSvg" class="viz-svg" viewBox="0 0 760 360" aria-label="Interactive SVG art"></svg>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="site-footer">
+      <h1>Contacts</h1>
+      <hr />
+      <p><strong>Email:</strong> its.terrylin@gmail.com</p>
+      <p><strong>Phone:</strong> (604) 779-7153</p>
+    </footer>
+    <script src="js/vis.js" defer></script>
+  </body>
+</html>

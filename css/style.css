@@ -3,6 +3,7 @@ body {
   margin: 0;
 }
 
+/*navbar*/
 .navbar {
   display: flex;
   align-items: center;
@@ -32,6 +33,7 @@ body {
   transition: .3s;
 }
 
+/*first row*/
 .my-intro{
   min-height: 100vh;
   padding: 6rem clamp(1.5rem, 6vw, 8rem);
@@ -65,6 +67,8 @@ body {
   margin: 0;
   transform: translateY(1rem); 
 }
+
+/*second row*/
 
 .intro-bottom{
   display: flex;
@@ -104,6 +108,7 @@ body {
   text-align: left;
 }
 
+/*footer/contacts*/
 .site-footer {
   margin-top: 5rem;
   background-color: #000000;
@@ -129,6 +134,8 @@ body {
   font-size: 0.95rem;
 }
 
+/*project*/
+
 .projects{
   padding: 6rem clamp(1.5rem, 6vw, 8rem);
 }
@@ -141,7 +148,6 @@ body {
   margin: 0 0 2.5rem;
   margin-left: 12rem;
 }
-
 
 .project{
   display: grid;
@@ -207,4 +213,87 @@ body {
   display: block;
 }
 
+.viz-page{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5rem clamp(1.5rem, 6vw, 8rem);
+}
 
+.viz-title{
+  font-family: "NeueMontreal", sans-serif;
+  letter-spacing: 0.12em;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin: 2rem 0 1rem;
+}
+
+.viz-section{
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 2.5rem;
+  align-items: start;
+  padding: 3rem 0;
+  border-top: 1px solid rgba(0,0,0,0.12);
+}
+
+.viz-section:last-child{
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+
+.viz-text h2{
+  font-family: "NeueMontreal", sans-serif;
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+}
+
+.viz-text p{
+  font-family: "Simplon Mono", sans-serif;
+  margin: 0;
+  line-height: 1.7;
+  max-width: 60ch;
+}
+
+.viz-card{
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: #fff;
+}
+
+.viz-svg{
+  width: 100%;
+  height: auto;
+  display: block;
+  background: white;
+}
+
+.viz-tooltip{
+  position: absolute;
+  pointer-events: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 10px;
+  font-family: "Simplon Mono", sans-serif;
+  font-size: 0.85rem;
+  background: rgba(0,0,0,0.85);
+  color: white;
+  transform: translate(-50%, -120%);
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+
+.viz-tooltip.is-visible{
+  opacity: 1;
+}
+
+.art-circle{
+  stroke: black;
+  stroke-width: 2;
+  fill: none;
+  opacity: 0.6;
+}
+
+@media (max-width: 900px){
+  .viz-section{
+    grid-template-columns: 1fr;
+  }
+}
